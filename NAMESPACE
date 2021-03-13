@@ -1,0 +1,13 @@
+useDynLib(coalesceR,.registration = TRUE,.fixes = "C_")
+
+export(sim.tree)
+export(draw.tree)
+export(add.mutations)
+export(heterozygosity)
+export(number.of.alleles)
+export(TMRCA)
+
+importFrom("grDevices", "dev.new", "rainbow")
+importFrom("graphics", "lines", "points", "text")
+importFrom("methods", "is", "new", "validObject")
+importFrom("stats", "rpois", "runif")
